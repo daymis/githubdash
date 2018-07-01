@@ -1,0 +1,42 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  <h1>{{org}}</h1>
+  <h4>Most Stars</h4>
+  <ol>
+    {% for stars in topStars %}
+    <li>REPO NAME</li>
+    {% endfor %}
+  </ol>
+
+  <h4>Most Forks</h4>
+  <ol>
+    {% for forks in topForks %}
+    <li>REPO NAME</li>
+    {% endfor %}
+  </ol>
+
+  <h4>Most Contributors</h4>
+  <ol>
+    {% for contribs in topContribs %}
+    <li>REPO NAME</li>
+    {% endfor %}
+  </ol>
+
+  <br/>
+
+  <h4>Top External Collaborators</h4>
+  <ol>
+    {% for outsiders in topOutsiders %}
+    <li>USERNAME</li>
+    {% endfor %}
+  </ol>
+
+  <h4>Top Internal Collaborators</h4>
+  <ol>
+    {% for insiders in topInsiders %}
+    <li>USERNAME</li>
+    {% endfor %}
+  </ol>
+</div>
+
+{% endblock %}
